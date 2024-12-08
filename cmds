@@ -1,0 +1,23 @@
+    1  yum install git -y
+    2  yum install maven -y
+    3  wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.1/bin/apache-tomcat-11.0.1.tar.gz
+    4  tar -xvzf apache-tomcat-11.0.1.tar.gz
+    5  mv apache-tomcat-11.0.1 /opt/tomcat
+    6  git clone https://github.com/CloudTechDevOps/project-1-maven-jenkins-CICD-docker-eks-.git
+    7  ls
+    8  cd project-1-maven-jenkins-CICD-docker-eks-/
+    9  ls
+   10  mvn install
+   11  ls
+   12  cd webapp/
+   13  ls
+   14  cd target/
+   15  ls
+   16  cp webapp.war /opt/tomcat/webapps/
+   17  sh /opt/tomcat/bin/startup.sh
+   18  cd /opt/tomcat/webapps/
+   19  ls
+   20  cd ..
+   21  ls
+   22  cd webapps/
+   23  mv webapp.war web.war
